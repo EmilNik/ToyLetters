@@ -1,0 +1,19 @@
+{
+  "name": "ToyLetters2.0",
+  "authors": [
+    "Emil Nik <emil.nik1002@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
