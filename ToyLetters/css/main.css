@@ -1,6 +1,26 @@
-body{
+@-webkit-keyframes changeBg
+{
+   0%   {background-image: url("../resources/images/12185114_10204546840221495_8763612778038204814_o.jpg");}
+   25%  {background-image: url("../resources/images/10947455_1053328038016710_2785022104556472984_o.jpg");}
+   50%  {background-image: url("../resources/images/12185114_10204546840221495_8763612778038204814_o.jpg");}
+   100% {background-image: url("../resources/images/12232672_1239672912715554_3835335110417238063_o.jpg");}
+}
+ 
+body
+{
 	padding: 0;
 	margin: 0;
+    font-size: 20px;
+}
+
+#background-img-div{
+   -webkit-animation: changeBg 15s infinite;
+    /*background-image: url("../resources/images/12185114_10204546840221495_8763612778038204814_o.jpg"); */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .left {
@@ -28,6 +48,12 @@ body{
     zoom: 1
 }
 
+.content{
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #navigation {
 	padding: 0;
 	margin: 0;
@@ -47,16 +73,16 @@ body{
 }
 
 #nav-logo-a {
-	content: url('../resources/images/logo.png');
-	height: 100%;
+	content: url('../resources/images/logo-mast.png');
+    height: 80px;
+    padding: 0;
 }
 
 .nav-ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-	width: 60px;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .nav-ul-li{
@@ -65,8 +91,20 @@ body{
 
 .nav-ul-li a{
 	display: block;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.tilted{    
+    height: 300px;
+    width: 100%;
+    margin-top: 500px;
+    background-color: white;
+    -webkit-transform: skew(0deg,3.5deg);
+    -moz-transform: skew(0deg,3.5deg);
+    -ms-transform: skew(0deg,3.5deg);
+    -o-transform: skew(0deg,3.5deg);
+    transform: skew(0deg,3.5deg);
 }
