@@ -37,7 +37,7 @@
 		<div id="div-tilted" class="tilted"></div>
 	</div>
 
-	<div class="container">
+	<div id="content">
 
 	</div>
 
@@ -47,9 +47,20 @@
 		</div>
 	</footer>
 
+	<!-- Libs -->
 	<script type="text/javascript" src="app/bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="app/bower_components/sammy/lib/sammy.js"></script>
+	<script type="text/javascript" src="app/bower_components/handlebars/handlebars.js"></script>
+	
+	<!-- Controllers -->
+	<script type="text/javascript" src="controllers/events_controller.js"></script>
+	
+	<!-- Loaders -->
+	<script type="text/javascript" src="app/image_loader.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/templates.js"></script>
+	
+	<!-- Scrollr -->
 	<script type="text/javascript" src="app/bower_components/skrollr/dist/skrollr.min.js"></script>
 	<script type="text/javascript">
 		var s = skrollr.init();

@@ -111,10 +111,6 @@ body div, body li, body img{
     text-decoration: none;
 }
 
-#nav-menu-button{
-    
-}
-
 #nav-menu-button div{
     width: 50px;
     height: 80px;
@@ -147,10 +143,14 @@ body div, body li, body img{
     height: 300px;
     width: 100%;
     margin-top: 650px;
-    background-color: white;
+    background-color: #fff;
     -webkit-transform: skew(0deg,3.5deg);
     -moz-transform: skew(0deg,3.5deg);
     -ms-transform: skew(0deg,3.5deg);
     -o-transform: skew(0deg,3.5deg);
     transform: skew(0deg,3.5deg);
+}
+
+#content{
+    background-color: #fff;
 }
