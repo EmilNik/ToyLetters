@@ -20,7 +20,7 @@
 
 	function resize() {
 		var div = document.getElementById('background-img-div');
-		div.style.height = window.innerHeight + 'px';
+		div.style.width = window.innerWidth + 'px';
 	};
 	changeBackgroundImage();
 	resize();
