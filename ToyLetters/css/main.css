@@ -9,6 +9,7 @@ body
 	margin: 0;
     font-size: 24px;
     font-family: kremlin;
+    height: 100%
 }
 
 body div, body li, body img{
@@ -153,7 +154,8 @@ li.nav-ul-li a{
     text-decoration: none;
     font-family: kremlin
 }
-ul.nav-ul.is-mobile li{
+
+ul.nav-ul li{
     height: 100%
 }
 
@@ -227,6 +229,11 @@ ul.nav-ul.is-mobile li>a{
     margin: auto;
 }
 
-footer{
-    background-color: #2d292f
+.footer-main{
+    background-color: #2d292f;
+    overflow: hidden
+}
+
+.footer-content{
+    
 }
