@@ -14,7 +14,7 @@
 	<div id="navigation">
 		<div id="nav-content" class="content">
 			<div>
-				<div data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li left"><a id="nav-logo-a" href="#">Logo</a></div>
+				<div data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li left"><a id="nav-logo-a" href="#/">Logo</a></div>
 				<ul class="nav-ul">
 					<li data-0="opacity: 0;" data-100="opacity: 1;" id="nav-menu-button" class="nav-ul-li right">
 						<div>
@@ -35,10 +35,9 @@
 
 	<div>
 		<div id="div-tilted" class="tilted"></div>
-	</div>
-
-	<div id="content">
-
+		<div id="main-container">
+			<div id="content" class="content"></div>
+		</div>
 	</div>
 
 	<footer>
@@ -51,20 +50,21 @@
 	<script type="text/javascript" src="app/bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="app/bower_components/sammy/lib/sammy.js"></script>
 	<script type="text/javascript" src="app/bower_components/handlebars/handlebars.js"></script>
-	
+
 	<!-- Controllers -->
 	<script type="text/javascript" src="controllers/events_controller.js"></script>
-	
+
 	<!-- Loaders -->
 	<script type="text/javascript" src="app/jsonRequester.js"></script>
+	<script type="text/javascript" src="app/data.js"></script>
 	<script type="text/javascript" src="app/image_loader.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>
 	<script type="text/javascript" src="app/templates.js"></script>
-	
+
 	<!-- Scrollr -->
 	<script type="text/javascript" src="app/bower_components/skrollr/dist/skrollr.min.js"></script>
 	<script type="text/javascript">
-		var s = skrollr.init();
+		var s = skrollr.init({forceHeight: false});
 	</script>
 </body>
 

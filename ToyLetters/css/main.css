@@ -28,6 +28,7 @@ body div, body li, body img{
     z-index: 0;
     top: 0;
     height: 100%;
+    z-index: -1;
 }
 
 .left {
@@ -151,6 +152,22 @@ body div, body li, body img{
     transform: skew(0deg,3.5deg);
 }
 
-#content{
+#main-container{
     background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -250px;
+}
+
+#content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    background-color: #2d292f
 }
