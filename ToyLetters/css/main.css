@@ -1,8 +1,14 @@
+@font-face {
+    font-family: kremlin;
+    src: url('../resources/fonts/kremlin.ttf');
+}
+
 body
 {
 	padding: 0;
 	margin: 0;
-    font-size: 20px;
+    font-size: 24px;
+    font-family: kremlin;
 }
 
 body div, body li, body img{
@@ -10,6 +16,15 @@ body div, body li, body img{
     -moz-transition: .6s ease-in-out;
     -webkit-transition: .6s ease-in-out;
     -o-transition: .6s ease-in-out;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ff9c01;
 }
 
 #background-img-div{
@@ -72,6 +87,12 @@ body div, body li, body img{
     z-index: 1;
 }
 
+#nav-bg{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
 #nav-content {
 	height: 80px;
     margin-left: auto;
@@ -104,12 +125,18 @@ body div, body li, body img{
     height: 80px;
 }
 
+.nav-ul-li-active.active a{
+    color: #ff9c01 !important;
+    transition: color .6s ease-in-out;
+}
+
 .nav-ul-li a{
 	display: block;
     color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: kremlin
 }
 
 #nav-menu-button div{
@@ -127,7 +154,11 @@ body div, body li, body img{
     top: 15px;
 }
 
-#nav-menu-button div .nav-menu div{
+#nav-menu-button div .nav-menu:hover{
+    background-color:rgba(0,0,0,0.5)
+}
+
+#nav-menu-button div .nav-menu>div{
     width: 40px;
     height: 40px;
     margin: auto;

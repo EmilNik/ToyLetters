@@ -5,6 +5,10 @@
 		});
 
 		this.get('#/home', eventsController.get);
+		
+		this.get('#/songs', songsController.get);
+		
+		this.get('#/events', eventsController.get);		
 	})
 	
 	$(function () {

@@ -12,22 +12,20 @@
 
 	<div id="background-img-div"></div>
 	<div id="navigation">
+		<div id="nav-bg" data-0="opacity: 0;" data-100="opacity: 0;"></div>
 		<div id="nav-content" class="content">
 			<div>
 				<div data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li left"><a id="nav-logo-a" href="#/">Logo</a></div>
 				<ul class="nav-ul">
-					<li data-0="opacity: 0;" data-100="opacity: 1;" id="nav-menu-button" class="nav-ul-li right">
+					<li data-0="opacity: 0;" data-100="opacity: 1;" id="nav-menu-button" class="right">
 						<div>
-							<div class="nav-menu">
+							<div id="nav-menu" class="nav-menu">
 								<div></div>
 							</div>
 						</div>
 					</li>
-					<li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li right"><a href="#">Стартер</a></li>
-					<li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li right"><a href="#">Шлагери</a></li>
-					<li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li right"><a href="#">Картинки</a></li>
-					<li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li right"><a href="#">За буквите</a></li>
-					<li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li right"><a href="#">Поезии</a></li>
+					<li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li nav-ul-li-active right"><a href="#/songs">SONGS</a></li>
+					<li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li nav-ul-li-active right"><a href="#/events">EVENTS</a></li>
 				</ul>
 			</div>
 		</div>
@@ -42,7 +40,7 @@
 
 	<footer>
 		<div class="content">
-			<a target="_blank" href="https://github.com/EmilNik/ToyLetters">Open Source Project</a>
+			<a target="_blank" href="https://github.com/EmilNik/ToyLetters">OPEN SOURCE PROJECT</a>
 		</div>
 	</footer>
 
@@ -53,10 +51,12 @@
 
 	<!-- Controllers -->
 	<script type="text/javascript" src="controllers/events_controller.js"></script>
+	<script type="text/javascript" src="controllers/songs_controller.js"></script>
 
 	<!-- Loaders -->
 	<script type="text/javascript" src="app/jsonRequester.js"></script>
 	<script type="text/javascript" src="app/data.js"></script>
+	<script type="text/javascript" src="app/ui-front-end.js"></script>
 	<script type="text/javascript" src="app/image_loader.js"></script>
 	<script type="text/javascript" src="app/app.js"></script>
 	<script type="text/javascript" src="app/templates.js"></script>
