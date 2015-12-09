@@ -115,14 +115,29 @@ a:hover{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     float: right;
     position: absolute;
     right: 0;
     top: 0;
     padding: 0;
-    line-height: 50px;
     height: 80px;
+}
+
+.nav-ul.is-desktop{
+    line-height: 50px;
+}
+
+.nav-ul.is-mobile{
+    float: right;
+    line-height: 20px;
+}
+
+.nav-ul.nav-ul.is-mobile>li{
+    float: none !important;
+}
+
+.nav-ul.nav-ul.is-mobile>li a{
+    text-align: left;
 }
 
 .nav-ul-li-active.active a{
@@ -130,13 +145,23 @@ a:hover{
     transition: color .6s ease-in-out;
 }
 
-.nav-ul-li a{
+li.nav-ul-li a{
 	display: block;
     color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-family: kremlin
+}
+
+ul.nav-ul.is-mobile li>a{
+    display: block !important;
+    float: right;
+    opacity: 0;
+}
+
+#nav-menu-button{
+    text-align: center;
 }
 
 #nav-menu-button div{
