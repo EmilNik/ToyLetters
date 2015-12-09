@@ -153,6 +153,9 @@ li.nav-ul-li a{
     text-decoration: none;
     font-family: kremlin
 }
+ul.nav-ul.is-mobile li{
+    height: 100%
+}
 
 ul.nav-ul.is-mobile li>a{
     display: block !important;
@@ -168,7 +171,8 @@ ul.nav-ul.is-mobile li>a{
     width: 50px;
     height: 80px;
     cursor: pointer;
-    position: relative;
+    position: relative;    
+    margin: auto;
 }
 
 #nav-menu-button div .nav-menu{
