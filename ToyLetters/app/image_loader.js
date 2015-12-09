@@ -21,7 +21,9 @@
 	function resize() {
 		var div = document.getElementById('background-img-div');
 		div.style.width = window.innerWidth + 'px';
+		$('#div-tilted')[0].style.marginTop = window.innerHeight + 'px';
 	};
+
 	changeBackgroundImage();
 	resize();
 	$(window).resize(resize);

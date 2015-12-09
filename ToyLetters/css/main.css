@@ -174,7 +174,6 @@ a:hover{
 .tilted{    
     height: 300px;
     width: 100%;
-    margin-top: 650px;
     background-color: #fff;
     -webkit-transform: skew(0deg,3.5deg);
     -moz-transform: skew(0deg,3.5deg);
