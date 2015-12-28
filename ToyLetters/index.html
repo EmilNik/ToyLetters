@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <base href="/" />
 	<meta charset="UTF-8">
 	<title>ToyLetters</title>
 	<link rel="stylesheet" href="css/main.css">
@@ -36,13 +37,13 @@
 					<div id="div-tilted" class="tilted"></div>
 				</div>
 				<div id="main-container">
-					<div id="content" class="content"></div>
+					<div id="content" class="content" ng-view></div>
 				</div>
 				<footer>
 					<section class="footer-main">
 						<div class="content footer-content">
-							<a class="left" target="_blank" href="https://www.facebook.com/toyletters/?fref=ts">TOY LETTERS</span>
-				            <a class="right" target="_blank" href="https://github.com/EmilNik/ToyLetters">OPEN SOURCE PROJECT</a>
+							<a class="right" target="_blank" href="https://www.facebook.com/toyletters/?fref=ts">TOY LETTERS</span>
+				            <a class="left" target="_blank" href="https://github.com/EmilNik/ToyLetters">OPEN SOURCE PROJECT</a>
 						</div>
 					</section>
 				</footer>
@@ -53,15 +54,16 @@
             <script type="text/javascript" src="app/bower_components/angular/angular.min.js"></script>
 
 			<!-- Controllers -->
+			<script type="text/javascript" src="controllers/home_controller.js"></script>
 			<script type="text/javascript" src="controllers/events_controller.js"></script>
 			<script type="text/javascript" src="controllers/songs_controller.js"></script>
             
             <!-- Services -->
 
 			<!-- Loaders -->
-			<script type="text/javascript" src="app/data.js"></script>
-			<script type="text/javascript" src="app/ui-front-end.js"></script>
-			<script type="text/javascript" src="app/image_loader.js"></script>
+			<script type="text/javascript" src="app/common/data.js"></script>
+			<script type="text/javascript" src="app/common/ui-front-end.js"></script>
+			<script type="text/javascript" src="app/common/image_loader.js"></script>
 			<script type="text/javascript" src="app/app.js"></script>
 
 			<!-- Scrollr -->

@@ -1,5 +1,8 @@
 (function() {
-    function config($routeProvider) {
+    function config($routeProvider, $locationProvider) {
+
+        $locationProvider.html5Mode(true);
+        
             var TEMPLATES_PREFIX = 'templates/',
                 CONTROLLER_AS_VIEW_MODEL = 'vm';
         
@@ -12,7 +15,8 @@
             .otherwise({ redirectTo: '/' });
     }
     
-    angular.module('ToyLettersApp.Controllers', []);
+    angular.module('ToyLettersApp.Services', []);
+    angular.module('ToyLettersApp.Controllers', ['ToyLettersApp.Services']);
     angular.module('ToyLettersApp', ['ToyLettersApp.Controllers'])
-        .config(['$routeProvider', config]);
+        .config(['$routeProvider', '$locationProvider', config]);
 }())
