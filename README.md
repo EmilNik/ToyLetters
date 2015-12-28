@@ -7,7 +7,9 @@ https://www.facebook.com/toyletters/?fref=ts
 Dependencies: 
     jquery: ~2.1.4,
     skrollr: scrollr#~0.6.30,
-    angular: ~1.4.8
+    angular: ~1.4.8,
+    angular-route: ~1.4.8,
+    angular-cookies: ~1.4.8
 ```
 
 ## License
