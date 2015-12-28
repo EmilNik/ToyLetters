@@ -3,73 +3,73 @@
 
 <head>
     <base href="/" />
-	<meta charset="UTF-8">
-	<title>ToyLetters</title>
-	<link rel="stylesheet" href="css/main.css">
-	<link rel='shortcut icon' href='resources/images/favicon.png' type='image/x-icon' />
+    <meta charset="UTF-8">
+    <title>ToyLetters</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel='shortcut icon' href='resources/images/favicon.png' type='image/x-icon' />
 </head>
 
-<body ng-app="ToyLettersApp">
-	<div id="background-img-div"></div>
-	<div id="navigation">
-		<div id="nav-bg" data-0="opacity: 0;" data-100="opacity: 0;"></div>
-		<div id="nav-content" class="content">
-			<div>
-				<div data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li left"><a id="nav-logo-a" href="#/">Logo</a></div>
-				<ul class="nav-ul">
-					<li data-0="opacity: 0;" data-100="opacity: 1;" id="nav-menu-button" class="right">
-						<div>
-							<div id="nav-menu" class="nav-menu">
-								<div>
-									<div>
-									</div>
-								</div>
-					</li>
-					<li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li nav-ul-li-active right"><a href="#/songs">SONGS</a></li>
-					<li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li nav-ul-li-active right"><a href="#/events">EVENTS</a></li>
-				</ul>
-				</div>
-				</div>
-			</div>
+<body ng-app="ToyLettersApp" ng-cloak>
+    <div id="background-img-div"></div>
+    <div id="navigation">
+        <div id="nav-bg" data-0="opacity: 0;" data-100="opacity: 0;"></div>
+        <div id="nav-content" class="content">
+            <div>
+                <div data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li left"><a id="nav-logo-a" href="/">Logo</a></div>
+                <ul class="nav-ul">
+                    <li data-0="opacity: 0;" data-100="opacity: 1;" id="nav-menu-button" class="right">
+                        <div>
+                            <div id="nav-menu" class="nav-menu">
+                                <div>
+                                    <div>
+                                    </div>
+                                </div>
+                    </li>
+                    <li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li nav-ul-li-active right"><a href="/songs">SONGS</a></li>
+                    <li data-0="opacity: 1;" data-100="opacity: 0;" class="nav-ul-li nav-ul-li-active right"><a href="/events">EVENTS</a></li>
+                </ul>
+                </div>
+                </div>
+            </div>
 
-			<div id="skrollr-body">
-				<div>
-					<div id="div-tilted" class="tilted"></div>
-				</div>
-				<div id="main-container">
-					<div id="content" class="content" ng-view></div>
-				</div>
-				<footer>
-					<section class="footer-main">
-						<div class="content footer-content">
-							<a class="right" target="_blank" href="https://www.facebook.com/toyletters/?fref=ts">TOY LETTERS</span>
+            <div id="skrollr-body">
+                <div>
+                    <div id="div-tilted" class="tilted"></div>
+                </div>
+                <div id="main-container">
+                    <div id="content" class="content" ng-view></div>
+                </div>
+                <footer>
+                    <section class="footer-main">
+                        <div class="content footer-content">
+                            <a class="right" target="_blank" href="https://www.facebook.com/toyletters/?fref=ts">TOY LETTERS</span>
 				            <a class="left" target="_blank" href="https://github.com/EmilNik/ToyLetters">OPEN SOURCE PROJECT</a>
-						</div>
-					</section>
-				</footer>
-			</div>
+                        </div>
+                    </section>
+                </footer>
+            </div>
 
-			<!-- Libs -->
-			<script type="text/javascript" src="app/bower_components/jquery/dist/jquery.js"></script>
+            <!-- Libs -->
+            <script type="text/javascript" src="app/bower_components/jquery/dist/jquery.js"></script>
             <script type="text/javascript" src="app/bower_components/angular/angular.min.js"></script>
             <script type="text/javascript" src="app/bower_components/angular-route/angular-route.min.js"></script>
             <script type="text/javascript" src="app/bower_components/angular-cookies/angular-cookies.min.js"></script>
 
-			<!-- Loaders -->
-			<script type="text/javascript" src="app/common/data.js"></script>
-			<script type="text/javascript" src="app/common/ui-front-end.js"></script>
-			<script type="text/javascript" src="app/common/image_loader.js"></script>
-			<script type="text/javascript" src="app/app.js"></script>
+            <!-- Loaders -->
+            <script type="text/javascript" src="app/common/data.js"></script>
+            <script type="text/javascript" src="app/common/ui-front-end.js"></script>
+            <script type="text/javascript" src="app/common/image_loader.js"></script>
+            <script type="text/javascript" src="app/app.js"></script>
 
-			<!-- Controllers -->
-			<script type="text/javascript" src="controllers/home_controller.js"></script>
-            
+            <!-- Controllers -->
+            <script type="text/javascript" src="app/home/home_controller.js"></script>
+
             <!-- Services -->
 
-			<!-- Scrollr -->
-			<script type="text/javascript" src="app/bower_components/skrollr/dist/skrollr.min.js"></script>
-			<script type="text/javascript">
-				$(function () {
+            <!-- Scrollr -->
+            <script type="text/javascript" src="app/bower_components/skrollr/dist/skrollr.min.js"></script>
+            <script type="text/javascript">
+                $(function () {
 		// initialize skrollr if the window width is large enough
 		if ($(window).width() > 767) {
 			skrollr.init({forceHeight: false});
@@ -82,7 +82,7 @@
 			}
 		});
 	});
-			</script>
+            </script>
 </body>
 
 </html>

@@ -12,9 +12,7 @@
                 controller: 'HomeController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .otherwise({
-                redirectTo: '/'
-            });
+            .otherwise({ redirectTo: '/' });
     }
 
     angular.module('ToyLettersApp.Services', []);
