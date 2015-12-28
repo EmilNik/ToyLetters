@@ -9,7 +9,7 @@
 	<link rel='shortcut icon' href='resources/images/favicon.png' type='image/x-icon' />
 </head>
 
-<body>
+<body ng-app="ToyLettersApp">
 	<div id="background-img-div"></div>
 	<div id="navigation">
 		<div id="nav-bg" data-0="opacity: 0;" data-100="opacity: 0;"></div>
@@ -52,19 +52,19 @@
 			<!-- Libs -->
 			<script type="text/javascript" src="app/bower_components/jquery/dist/jquery.js"></script>
             <script type="text/javascript" src="app/bower_components/angular/angular.min.js"></script>
-
-			<!-- Controllers -->
-			<script type="text/javascript" src="controllers/home_controller.js"></script>
-			<script type="text/javascript" src="controllers/events_controller.js"></script>
-			<script type="text/javascript" src="controllers/songs_controller.js"></script>
-            
-            <!-- Services -->
+            <script type="text/javascript" src="app/bower_components/angular-route/angular-route.min.js"></script>
+            <script type="text/javascript" src="app/bower_components/angular-cookies/angular-cookies.min.js"></script>
 
 			<!-- Loaders -->
 			<script type="text/javascript" src="app/common/data.js"></script>
 			<script type="text/javascript" src="app/common/ui-front-end.js"></script>
 			<script type="text/javascript" src="app/common/image_loader.js"></script>
 			<script type="text/javascript" src="app/app.js"></script>
+
+			<!-- Controllers -->
+			<script type="text/javascript" src="controllers/home_controller.js"></script>
+            
+            <!-- Services -->
 
 			<!-- Scrollr -->
 			<script type="text/javascript" src="app/bower_components/skrollr/dist/skrollr.min.js"></script>

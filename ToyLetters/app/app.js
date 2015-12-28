@@ -1,22 +1,24 @@
-(function() {
+(function () {
     function config($routeProvider, $locationProvider) {
 
         $locationProvider.html5Mode(true);
-        
-            var TEMPLATES_PREFIX = 'templates/',
-                CONTROLLER_AS_VIEW_MODEL = 'vm';
-        
+
+        var TEMPLATES_PREFIX = 'templates/',
+            CONTROLLER_AS_VIEW_MODEL = 'vm';
+
         $routeProvider
             .when('/', {
                 templateUrl: TEMPLATES_PREFIX + 'home.html',
                 controller: 'HomeController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .otherwise({ redirectTo: '/' });
+            .otherwise({
+                redirectTo: '/'
+            });
     }
-    
+
     angular.module('ToyLettersApp.Services', []);
     angular.module('ToyLettersApp.Controllers', ['ToyLettersApp.Services']);
-    angular.module('ToyLettersApp', ['ToyLettersApp.Controllers'])
+    angular.module('ToyLettersApp', ['ngRoute', 'ngCookies', 'ToyLettersApp.Controllers'])
         .config(['$routeProvider', '$locationProvider', config]);
-}())
+} ())
